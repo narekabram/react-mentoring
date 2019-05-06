@@ -1,0 +1,25 @@
+.film-desc {
+  display: flex;
+
+  &-image {
+    background-image: url("https://www.gstatic.com/webp/gallery3/2.png");
+    height: 480px;
+    min-width: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 40px;
+  }
+
+  &-content {
+
+  }
+
+  &-wrapper, &-release-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &-rating {
+    margin: 0 30px;
+  }
+}

@@ -1,0 +1,16 @@
+.content-wrapper {
+  height: 100%;
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .no-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}

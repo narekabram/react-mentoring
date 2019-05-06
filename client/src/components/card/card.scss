@@ -1,0 +1,30 @@
+@import '../../variable';
+
+.card {
+  //flex: 1 0 33%;
+  height: 600px;
+  width: 300px;
+  margin: 0 40px;
+
+  .film-image {
+    height: 80%;
+    background-image: url("https://www.gstatic.com/webp/gallery3/2.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .film-info {
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .film-release {
+        height: 20px;
+        width: 60px;
+        border: $gray solid 1px;
+        text-align: center;
+      }
+    }
+  }
+}

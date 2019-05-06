@@ -1,9 +1,15 @@
 import React from 'react';
+import Text from '../text/text';
+import './footer.scss';
 
 const Footer = () => {
   return (
-      <h2>Footer</h2>
-  )
+      <div className='footer'>
+          <div className='container'>
+              <Text className='roulette'>netflixroulette</Text>
+          </div>
+      </div>
+)
 };
 
 export default Footer;

@@ -1,0 +1,19 @@
+@import '../../variable';
+
+.button {
+  background-color: $primary;
+  border: none;
+  color: $white;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.gray {
+  background-color: $gray;
+}
+
+.button-search-reverse {
+  background-color: $white;
+  color: $primary;
+}

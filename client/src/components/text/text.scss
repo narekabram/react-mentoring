@@ -1,0 +1,29 @@
+@import '../../variable';
+
+.text {
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.button-text {
+  padding: 0;
+}
+
+.no-films {
+  font-size: 50px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.film-genre {
+  color: $gray;
+  padding: 5px 0;
+}
+
+.film-desc-title {
+  color: $primary;
+  font-size: 30px;
+}

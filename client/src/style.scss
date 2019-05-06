@@ -1,0 +1,36 @@
+@import 'variable';
+
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.roulette {
+  color: $primary;
+  font-weight: 700;
+}
+
+.color-white {
+  color: $white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@mixin margin-r($size) {
+  margin-right: #{$size}px;
+}
+
+@mixin padding-t($size) {
+  padding-top: #{$size}px;
+}
+
+.margin-r-20 {
+  @include margin-r(20);
+}
+
+.padding-t-15 {
+  @include padding-t(15);
+}

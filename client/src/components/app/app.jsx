@@ -1,15 +1,20 @@
 import React from 'react';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import '../../style.scss';
+import './app.scss';
+import Content from "../content/content";
+import CardsFilter from "../cards-filer/cards-filter";
 
-export default  class App extends React.Component {
+export default class App extends React.Component {
     render() {
         return (
-            <React.Fragment>
-                <Header/>
-                <h1>Hello World</h1>
+            <div className='app'>
+                <Header homePage={false}/>
+                <CardsFilter/>
+                <Content></Content>
                 <Footer/>
-            </React.Fragment>
+            </div>
         )
     }
 }
