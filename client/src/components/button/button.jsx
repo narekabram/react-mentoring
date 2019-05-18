@@ -4,7 +4,7 @@ import Text from "../text/text";
 
 const Button = (props) => {
     return (
-        <button className={'button ' + props.className} >
+        <button data-testid={props.cypressId} className={'button ' + props.className} >
             <Text className='button-text'>{props.children}</Text>
         </button>
     );

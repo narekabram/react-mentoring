@@ -17,3 +17,12 @@
   background-color: $white;
   color: $primary;
 }
+
+.search-main-page {
+  &:hover {
+    background-color: $white;
+    > * {
+      color: $primary;
+    }
+  }
+}

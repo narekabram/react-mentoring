@@ -23,7 +23,7 @@ class Header extends PureComponent {
                         {this.props.homePage ? <div className='home-page-header'>
                             <Text className='title'>find your movie</Text>
                             <div className='search'>
-                                <Input placeholderText='Search'/>
+                                <Input cypressId='search-input' placeholderText='Search'/>
                                 <div className='search-bar'>
                                     <div className='search-left'>
                                         <span><Text className='title'>Search by</Text></span>
@@ -31,7 +31,7 @@ class Header extends PureComponent {
                                         <span><Button className='gray'>Genre</Button></span>
                                     </div>
                                     <div className='search-right'>
-                                        <Button className='search-main-page'>Search</Button>
+                                        <Button cypressId='search-button' className='search-main-page'>Search</Button>
                                     </div>
                                 </div>
                             </div>
