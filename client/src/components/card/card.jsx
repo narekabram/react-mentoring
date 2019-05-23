@@ -1,6 +1,7 @@
 import React from 'react';
 import './card.scss';
 import Text from "../text/text";
+import {Link} from "react-router-dom";
 
 export default class Card extends React.Component {
 
@@ -10,16 +11,18 @@ export default class Card extends React.Component {
 
     render() {
         return (
-            <div className='card'>
-                <div className='film-image'></div>
+            <Link className='card' to={`/film/${this.props.film.id}`}>
+                <img className='film-image' src={this.props.film.poster_path} />
                 <div className='film-info'>
                     <div className='title'>
-                        <Text className='card-title'>film title</Text>
-                        <div className='film-release'>1997</div>
+                        <Text className='card-title'>{this.props.film.title}</Text>
+                        <div className='film-release'>{new Date(this.props.film.release_date).getFullYear()}</div>
                     </div>
-                    <Text className='film-genre'>test genre</Text>
+                    <div className="genre-wrapper">
+                        {this.props.film.genres.map((genre, i) => <Text className='film-genre' key={i}>{genre}</Text>)}
+                    </div>
                 </div>
-            </div>
+            </Link>
         )
     }
 }

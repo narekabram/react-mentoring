@@ -1,9 +1,10 @@
 .content-wrapper {
   height: 100%;
+  padding: 40px 0;
 
   .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
   }

@@ -14,6 +14,12 @@ module.exports = ({mode}) => {
             path: path.join(__dirname, "/dist"),
             filename: "index_bundle.js"
         },
+        devServer: {
+            historyApiFallback: true,
+            contentBase: "./client/public/",
+            port: 3000,
+            publicPath: "http://localhost:3000/dist"
+        },
         module: {
             rules: [{
                 test: /\.(js|jsx)$/,
@@ -34,12 +40,6 @@ module.exports = ({mode}) => {
             }]
         },
         resolve: { extensions: [".jsx", ".js"] },
-        devServer: {
-            contentBase: path.join(__dirname, "./client/public/"),
-            port: 3000,
-            publicPath: "http://localhost:3000",
-            historyApiFallback: true
-        },
         plugins: [
             new HtmlWebPackPlugin({
                 hash: true,

@@ -7,6 +7,7 @@
   padding: 10px 20px;
   cursor: pointer;
   text-transform: uppercase;
+  outline: none;
 }
 
 .gray {
@@ -21,6 +22,22 @@
 .search-main-page {
   &:hover {
     background-color: $white;
+    > * {
+      color: $primary;
+    }
+  }
+}
+
+.sort-by {
+  background-color: transparent;
+  padding: 0;
+  margin-left: 20px;
+
+  > * {
+    color: $gray;
+  }
+
+  &.selected-rating {
     > * {
       color: $primary;
     }

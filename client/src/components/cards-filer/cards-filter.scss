@@ -4,8 +4,12 @@
   height: 50px;
   background-color: $lite-gray;
 
-  .filter-by {
-    width: 300px;
-    padding: 10px 0 0 40px ;
+  .cards-filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .filter-by {
+      display: flex;
+    }
   }
 }

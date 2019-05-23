@@ -12,24 +12,17 @@ export default class FilmDesc extends React.Component {
     render() {
         return (
             <div className='film-desc'>
-                <div className='film-desc-image'></div>
+                <img className='film-desc-image' src={this.props.film.poster_path}/>
                 <div className='film-desc-content'>
                     <div className="film-desc-wrapper">
-                        <Text className='film-desc-title'>Pulp Fiction</Text>
-                        <Rating className="film-desc-rating">4.1</Rating>
+                        <Text className='film-desc-title'>{this.props.film.title}</Text>
+                        <Rating className="film-desc-rating">{this.props.film.vote_average}</Rating>
                     </div>
-                    <Text className='color-white'>Oscar-wining Movies</Text>
                     <div className='film-desc-release-wrapper'>
-                        <Text className='color-white bold margin-r-20'>1994</Text>
-                        <Text className='color-white bold'>154 min</Text>
+                        <Text className='color-white bold margin-r-20'>{(new Date(this.props.film.revenue * 1000)).getFullYear().toString()}</Text>
+                        <Text className='color-white bold'>{this.props.film.runtime} min</Text>
                     </div>
-                    <Text className='color-white '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
-                        was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including
-                        versions of Lorem Ipsum.</Text>
+                    <Text className='color-white '>{this.props.film.overview}</Text>
                 </div>
             </div>
         )

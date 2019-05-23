@@ -1,16 +1,13 @@
 @import '../../variable';
 
 .card {
-  //flex: 1 0 33%;
   height: 600px;
   width: 300px;
   margin: 0 40px;
+  text-decoration: none;
 
   .film-image {
-    height: 80%;
-    background-image: url("https://www.gstatic.com/webp/gallery3/2.png");
-    background-size: cover;
-    background-position: center;
+    width: 100%;
   }
 
   .film-info {
@@ -24,6 +21,15 @@
         width: 60px;
         border: $gray solid 1px;
         text-align: center;
+      }
+    }
+
+    .genre-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        margin-right: 10px;
       }
     }
   }
